@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b0c0c;
+  --color-paper: #ffffff;
+  --color-mist: #f3f2f1;
+  --color-rule: #505a5f;
+  --color-link: #1d70b8;
+  --color-focus: #ffdd00;
+  --color-success: #0f7a52;
+  --color-danger: #ca3535;
+  --color-danger-dark: #982828;
+  --color-info: #1d70b8;
+  --font-sans: Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+    font-synthesis: none;
+    scrollbar-gutter: stable;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  a {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.18em;
+  }
+
+  code {
+    border: 1px solid currentColor;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    padding: 0.05em 0.25em;
+  }
+}
+
+@utility focus-ring {
+  outline: 4px solid var(--color-ink);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 7px var(--color-focus);
+}
+
+@utility focus-ring-inverted {
+  outline: 4px solid var(--color-focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 7px var(--color-paper);
+}
+
+@utility section-shell {
+  @apply mx-auto max-w-7xl border-ink px-4 py-12 sm:px-6 md:py-16 lg:px-8;
+}
+
+@utility section-heading {
+  @apply max-w-3xl space-y-4 pb-8 md:pb-12;
+}
+
+@utility eyebrow {
+  @apply text-base font-bold uppercase tracking-[0.08em];
+}
+
+@utility heading-xl {
+  @apply text-balance text-4xl font-bold leading-none tracking-[-0.04em] sm:text-5xl;
+}
+
+@utility heading-l {
+  @apply text-balance text-3xl font-bold leading-none tracking-[-0.035em] sm:text-4xl;
+}
+
+@utility heading-m {
+  @apply text-2xl font-bold leading-tight;
+}
+
+@utility lead {
+  @apply text-pretty text-xl leading-8;
+}
+
+@utility panel {
+  @apply border-4 border-ink bg-paper p-5;
+}
+
+@utility btn {
+  @apply inline-flex min-h-12 items-center justify-center border-2 px-5 py-3 text-center text-lg font-bold transition duration-100 ease-out active:translate-y-0.5 focus-visible:focus-ring;
+}
+
+@utility btn-primary {
+  @apply border-ink bg-ink text-paper hover:bg-paper hover:text-ink;
+}
+
+@utility btn-secondary {
+  @apply border-ink bg-paper text-ink hover:bg-ink hover:text-paper;
+}
+
+@utility btn-warning {
+  @apply border-danger bg-danger text-paper hover:border-danger-dark hover:bg-danger-dark;
+}
+
+@utility form-input {
+  @apply min-h-12 border-2 border-ink bg-paper px-3 py-2 text-xl text-ink focus-visible:focus-ring;
+}
+
+@utility form-label {
+  @apply text-xl font-bold;
+}
+
+@utility form-hint {
+  @apply text-lg text-rule;
+}
+
+@utility link {
+  @apply font-bold text-link underline hover:decoration-4 focus-visible:focus-ring;
+}
+
+@utility page-link {
+  @apply inline-flex min-h-11 min-w-11 items-center justify-center border-2 border-ink px-3 transition-colors duration-100 hover:bg-mist focus-visible:focus-ring aria-[current=page]:bg-ink aria-[current=page]:text-paper aria-[current=page]:hover:bg-ink;
+}
+
+@utility tag {
+  @apply inline-flex bg-ink px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-paper;
+}
+
+@utility tag-muted {
+  @apply inline-flex bg-mist px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-rule;
+}
+
+@utility tag-danger {
+  @apply inline-flex bg-danger px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-paper;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
