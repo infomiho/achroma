@@ -236,7 +236,7 @@ function Home() {
             <p className="lead">Small apps built with the system. Open one and click through it.</p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {exampleApps.map((app) => (
               <article className="panel" key={app.path}>
                 <h3 className="heading-m"><a className="link" href={app.path}>{app.title}</a></h3>

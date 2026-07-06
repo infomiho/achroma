@@ -1,6 +1,6 @@
 # Achroma
 
-![The account dashboard example app, built with Achroma](docs/dashboard.png)
+![The dashboard example app, built with Achroma](docs/dashboard.png)
 
 A monochrome design system inspired by the [GOV.UK Design System](https://design-system.service.gov.uk/). React 19, Tailwind CSS 4, Vite, TypeScript.
 
@@ -14,7 +14,7 @@ A monochrome design system inspired by the [GOV.UK Design System](https://design
 
 ## Examples
 
-Four apps built with the system, indexed at `#/examples`: membership application, sign-in with validation, account dashboard, blog.
+Five apps built with the system, indexed at `#/examples`: dashboard, bookings data table, settings, sign-in with validation, membership application.
 
 ## Commands
 

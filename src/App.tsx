@@ -2,16 +2,15 @@ import { useEffect, useRef, useState, type ComponentType } from 'react'
 import ExamplesIndex from './pages/ExamplesIndex'
 import Home from './pages/Home'
 import PageNotFound from './pages/examples/PageNotFound'
-import AccountPage from './pages/examples/account/AccountPage'
-import BlogArticlePage from './pages/examples/blog/BlogArticlePage'
-import BlogListPage from './pages/examples/blog/BlogListPage'
+import BookingsPage from './pages/examples/bookings/BookingsPage'
+import DashboardPage from './pages/examples/dashboard/DashboardPage'
 import CheckAnswersPage from './pages/examples/membership/CheckAnswersPage'
 import ConfirmationPage from './pages/examples/membership/ConfirmationPage'
 import QuestionPage from './pages/examples/membership/QuestionPage'
 import StartPage from './pages/examples/membership/StartPage'
+import SettingsPage from './pages/examples/settings/SettingsPage'
 import SecurityCodePage from './pages/examples/sign-in/SecurityCodePage'
 import SignInPage from './pages/examples/sign-in/SignInPage'
-import { featuredPost } from './pages/examples/blog/posts'
 
 const siteTitle = 'Achroma'
 
@@ -28,9 +27,9 @@ const routes: Record<string, Route> = {
   '/examples/membership/confirmation': { title: 'Membership confirmed', Page: ConfirmationPage },
   '/examples/sign-in': { title: 'Sign in', Page: SignInPage },
   '/examples/sign-in/security-code': { title: 'Check your phone', Page: SecurityCodePage },
-  '/examples/account': { title: 'Your bookings', Page: AccountPage },
-  '/examples/blog': { title: 'Latest updates', Page: BlogListPage },
-  '/examples/blog/article': { title: featuredPost.title, Page: BlogArticlePage },
+  '/examples/dashboard': { title: 'Overview', Page: DashboardPage },
+  '/examples/bookings': { title: 'Bookings', Page: BookingsPage },
+  '/examples/settings': { title: 'Settings', Page: SettingsPage },
   '/examples/page-not-found': notFound,
 }
 

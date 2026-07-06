@@ -36,11 +36,21 @@ export function ExampleShell({ exampleTitle, serviceName = 'Example', serviceHre
       {nav && (
         <nav className="border-b-2 border-ink bg-mist" aria-label="Service navigation">
           <ul className="mx-auto flex w-full max-w-5xl flex-wrap gap-x-6 gap-y-2 px-4 py-3 text-lg font-bold sm:px-6">
-            {nav.map(([itemLabel, href]) => (
-              <li key={href}>
-                <a className="underline hover:decoration-4 focus-visible:focus-ring" href={href}>{itemLabel}</a>
-              </li>
-            ))}
+            {nav.map(([itemLabel, href]) => {
+              const isCurrent = href === window.location.hash
+
+              return (
+                <li key={href}>
+                  <a
+                    aria-current={isCurrent ? 'page' : undefined}
+                    className={isCurrent ? 'inline-block border-b-4 border-ink no-underline focus-visible:focus-ring' : 'underline hover:decoration-4 focus-visible:focus-ring'}
+                    href={href}
+                  >
+                    {itemLabel}
+                  </a>
+                </li>
+              )
+            })}
           </ul>
         </nav>
       )}

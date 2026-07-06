@@ -19,7 +19,7 @@ function SecurityCodePage() {
       setError('Enter the 6-digit security code')
       return
     }
-    window.location.hash = '#/examples/account'
+    window.location.hash = '#/examples/dashboard'
   }
 
   return (
