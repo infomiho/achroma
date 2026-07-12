@@ -93,7 +93,7 @@
 }
 
 @utility btn {
-  @apply inline-flex min-h-12 items-center justify-center border-2 px-5 py-3 text-center text-lg font-bold transition duration-100 ease-out active:translate-y-0.5 focus-visible:focus-ring;
+  @apply inline-flex min-h-12 items-center justify-center border-2 px-5 py-3 text-center text-lg font-bold transition-[color,background-color,border-color,translate] duration-100 ease-out active:translate-y-0.5 focus-visible:focus-ring;
 }
 
 @utility btn-primary {
@@ -125,7 +125,7 @@
 }
 
 @utility page-link {
-  @apply inline-flex min-h-11 min-w-11 items-center justify-center border-2 border-ink px-3 transition-colors duration-100 hover:bg-mist focus-visible:focus-ring aria-[current=page]:bg-ink aria-[current=page]:text-paper aria-[current=page]:hover:bg-ink;
+  @apply inline-flex min-h-11 min-w-11 items-center justify-center border-2 border-ink px-3 transition-[background-color] duration-100 hover:bg-mist focus-visible:focus-ring aria-[current=page]:bg-ink aria-[current=page]:text-paper aria-[current=page]:hover:bg-ink;
 }
 
 @utility tag {

@@ -320,7 +320,7 @@ function Tabs() {
             <button
               aria-controls={`tab-panel-${tabId}`}
               aria-selected={isSelected}
-              className={isSelected ? 'border-x-2 border-t-2 border-ink bg-paper px-4 py-3 font-bold focus-visible:focus-ring' : 'px-4 py-3 font-bold underline focus-visible:focus-ring'}
+              className={isSelected ? 'border-x-2 border-t-2 border-ink bg-paper px-4 py-3 font-bold focus-visible:focus-ring' : 'border-x-2 border-t-2 border-transparent px-4 py-3 font-bold underline focus-visible:focus-ring'}
               id={`tab-${tabId}`}
               key={tabId}
               onKeyDown={(event) => {
