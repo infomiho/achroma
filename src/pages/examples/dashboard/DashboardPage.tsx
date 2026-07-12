@@ -47,7 +47,7 @@ function DashboardPage() {
           {stats.map(([statLabel, value, change]) => (
             <li className="panel" key={statLabel}>
               <p className="text-lg font-bold">{statLabel}</p>
-              <p className="mt-2 text-5xl font-bold">{value}</p>
+              <p className="mt-2 text-5xl font-bold tabular-nums">{value}</p>
               <p className="form-hint mt-2">{change}</p>
             </li>
           ))}
@@ -74,7 +74,7 @@ function DashboardPage() {
                     <tr key={reference}>
                       <td className="py-3 pr-4 font-bold">{reference}</td>
                       <td className="py-3 pr-4">{space}</td>
-                      <td className="py-3 pr-4">{date}</td>
+                      <td className="whitespace-nowrap py-3 pr-4">{date}</td>
                       <td className="py-3"><strong className={statusTagClass[status]}>{status}</strong></td>
                     </tr>
                   ))}
@@ -89,7 +89,7 @@ function DashboardPage() {
               {recentActivity.map(([when, event]) => (
                 <li className="py-3" key={event}>
                   <p className="form-hint">{when}</p>
-                  <p className="mt-1 text-lg leading-7">{event}</p>
+                  <p className="mt-1 text-lg">{event}</p>
                 </li>
               ))}
             </ol>

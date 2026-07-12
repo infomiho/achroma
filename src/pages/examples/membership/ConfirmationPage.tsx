@@ -14,10 +14,10 @@ function ConfirmationPage() {
         <ConfirmationPanel heading={<h1 className="text-balance text-3xl font-bold sm:text-4xl">Membership confirmed</h1>}>
           Your membership number<br /><strong>M-48291</strong>
         </ConfirmationPanel>
-        <p className="text-lg leading-7">We have sent you a confirmation email.</p>
+        <p className="text-lg">We have sent you a confirmation email.</p>
         <h2 className="heading-m">What happens next</h2>
-        <p className="text-lg leading-7">Collect your key fob at reception on your first visit. You can book straight away.</p>
-        <p className="text-lg leading-7"><a className="link" href="#/examples">What did you think of this service?</a></p>
+        <p className="text-lg">Collect your key fob at reception on your first visit. You can book straight away.</p>
+        <p className="text-lg"><a className="link" href="#/examples">What did you think of this service?</a></p>
       </div>
     </ExampleShell>
   )

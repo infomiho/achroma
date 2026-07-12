@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0b0c0c;
-  --color-paper: #ffffff;
-  --color-mist: #f3f2f1;
-  --color-rule: #505a5f;
-  --color-link: #1d70b8;
-  --color-focus: #ffdd00;
-  --color-success: #0f7a52;
-  --color-danger: #ca3535;
-  --color-danger-dark: #982828;
-  --color-info: #1d70b8;
+  --color-ink: oklch(0.153 0.002 196.981);
+  --color-paper: oklch(1 0 0);
+  --color-mist: oklch(0.962 0.002 67.802);
+  --color-rule: oklch(0.461 0.015 229.216);
+  --color-link: oklch(0.535 0.136 249.879);
+  --color-focus: oklch(0.899 0.186 97.857);
+  --color-success: oklch(0.514 0.11 161.041);
+  --color-danger: oklch(0.558 0.186 25.617);
+  --color-danger-dark: oklch(0.455 0.148 25.306);
+  --color-info: oklch(0.535 0.136 249.879);
   --font-sans: Arial, ui-sans-serif, system-ui, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
@@ -73,11 +73,11 @@
 }
 
 @utility heading-xl {
-  @apply text-balance text-4xl font-bold leading-none tracking-[-0.04em] sm:text-5xl;
+  @apply text-balance text-4xl font-bold leading-[1.1] tracking-[-0.04em] sm:text-5xl;
 }
 
 @utility heading-l {
-  @apply text-balance text-3xl font-bold leading-none tracking-[-0.035em] sm:text-4xl;
+  @apply text-balance text-3xl font-bold leading-[1.1] tracking-[-0.035em] sm:text-4xl;
 }
 
 @utility heading-m {
@@ -85,7 +85,7 @@
 }
 
 @utility lead {
-  @apply text-pretty text-xl leading-8;
+  @apply text-pretty text-xl leading-relaxed;
 }
 
 @utility panel {
@@ -129,15 +129,15 @@
 }
 
 @utility tag {
-  @apply inline-flex bg-ink px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-paper;
+  @apply inline-flex whitespace-nowrap bg-ink px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-paper;
 }
 
 @utility tag-muted {
-  @apply inline-flex bg-mist px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-rule;
+  @apply inline-flex whitespace-nowrap bg-mist px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-rule;
 }
 
 @utility tag-danger {
-  @apply inline-flex bg-danger px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-paper;
+  @apply inline-flex whitespace-nowrap bg-danger px-3 py-1 text-base font-bold uppercase tracking-[0.08em] text-paper;
 }
 
 @media (prefers-reduced-motion: reduce) {

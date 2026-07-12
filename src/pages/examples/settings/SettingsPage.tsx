@@ -105,7 +105,7 @@ function SettingsPage() {
 
             <section className="border-4 border-danger p-5 outline-none" id="delete-account" tabIndex={-1} aria-labelledby="delete-heading">
               <h2 className="heading-m" id="delete-heading">Delete your account</h2>
-              <p className="mt-3 text-lg leading-7">Your bookings and invoices are removed after 30 days. This cannot be undone.</p>
+              <p className="mt-3 text-lg">Your bookings and invoices are removed after 30 days. This cannot be undone.</p>
               {confirmingDelete ? (
                 <div className="mt-5 space-y-4">
                   <p className="text-lg font-bold">Are you sure you want to delete your account?</p>

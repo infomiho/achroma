@@ -58,7 +58,7 @@ function ExampleCard({ example }: { example: ExampleMeta }) {
   return (
     <article className="panel h-full">
       <h3 className="heading-m"><a className="link" href={example.path}>{example.title}</a></h3>
-      <p className="mt-3 text-lg leading-7">{example.description}</p>
+      <p className="mt-3 text-pretty text-lg">{example.description}</p>
       {example.showcases && <p className="form-hint mt-3">Shows: {example.showcases}</p>}
     </article>
   )

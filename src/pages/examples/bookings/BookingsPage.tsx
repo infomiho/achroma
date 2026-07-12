@@ -71,7 +71,7 @@ function BookingsPage() {
           </div>
         </div>
 
-        <p className="text-lg font-bold" aria-live="polite">
+        <p className="text-lg font-bold tabular-nums" aria-live="polite">
           Showing {visibleBookings.length} of {bookings.length} bookings
         </p>
 
@@ -97,7 +97,7 @@ function BookingsPage() {
                   <tr key={reference}>
                     <td className="py-3 pr-4 font-bold">{reference}</td>
                     <td className="py-3 pr-4">{space}</td>
-                    <td className="py-3 pr-4">{date}</td>
+                    <td className="whitespace-nowrap py-3 pr-4">{date}</td>
                     <td className="py-3 pr-4"><strong className={statusTagClass[bookingStatus]}>{bookingStatus}</strong></td>
                     <td className="py-3">
                       <a className="link" href="#/examples/bookings">

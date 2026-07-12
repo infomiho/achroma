@@ -22,7 +22,7 @@ function CheckAnswersPage() {
         </section>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <h2 className="heading-m">Now send your application</h2>
-          <p className="text-lg leading-7">By sending this application you confirm your answers are correct.</p>
+          <p className="text-lg">By sending this application you confirm your answers are correct.</p>
           <button className="btn btn-primary" type="submit">Accept and send</button>
         </form>
       </div>

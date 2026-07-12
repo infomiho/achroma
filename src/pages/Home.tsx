@@ -27,7 +27,7 @@ function Home() {
         <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:px-8">
           <div className="max-w-4xl space-y-5">
             <p className="eyebrow inline-flex border-2 border-ink px-3 py-1">Reference implementation</p>
-            <h1 className="text-balance text-[clamp(2.5rem,4.5vw+1.25rem,5.75rem)] font-bold leading-[1.02] tracking-[-0.04em]">
+            <h1 className="text-balance text-[clamp(2.5rem,4.5vw+1.25rem,5.75rem)] font-bold leading-[1.05] tracking-[-0.04em]">
               Accessible components for services people rely on.
             </h1>
             <p className="lead max-w-2xl">
@@ -54,19 +54,19 @@ function Home() {
           <div className="grid gap-6 lg:grid-cols-4">
             <article className="panel">
               <h3 className="heading-m">Typography</h3>
-              <p className="mt-3 text-lg leading-7">System fonts, strong weight contrast and readable line lengths.</p>
+              <p className="mt-3 text-pretty text-lg">System fonts, strong weight contrast and readable line lengths.</p>
             </article>
             <article className="panel">
               <h3 className="heading-m">Focus</h3>
-              <p className="mt-3 text-lg leading-7">Yellow focus halo with a black outline.</p>
+              <p className="mt-3 text-pretty text-lg">Yellow focus halo with a black outline.</p>
             </article>
             <article className="panel">
               <h3 className="heading-m">Colour</h3>
-              <p className="mt-3 text-lg leading-7">Colour has functional meaning only.</p>
+              <p className="mt-3 text-pretty text-lg">Colour has functional meaning only.</p>
             </article>
             <article className="panel">
               <h3 className="heading-m">Layout</h3>
-              <p className="mt-3 text-lg leading-7">Form and content widths are capped for readability.</p>
+              <p className="mt-3 text-pretty text-lg">Form and content widths are capped for readability.</p>
             </article>
           </div>
         </section>
@@ -240,7 +240,7 @@ function Home() {
             {exampleApps.map((app) => (
               <article className="panel" key={app.path}>
                 <h3 className="heading-m"><a className="link" href={app.path}>{app.title}</a></h3>
-                <p className="mt-3 text-lg leading-7">{app.description}</p>
+                <p className="mt-3 text-pretty text-lg">{app.description}</p>
               </article>
             ))}
           </div>
@@ -276,7 +276,7 @@ function Home() {
             <p className="eyebrow">Accessibility</p>
             <h2 className="heading-l">Accessibility notes</h2>
           </div>
-          <ul className="grid gap-4 text-xl leading-8 [&_li]:border-l-4 [&_li]:border-ink [&_li]:pl-4">
+          <ul className="grid gap-4 text-xl leading-relaxed [&_li]:border-l-4 [&_li]:border-ink [&_li]:pl-4">
             <li><strong>Responsive grids:</strong> layouts adapt without hiding labels or actions.</li>
             <li><strong><code>:focus-visible</code>:</strong> keyboard users get a high-contrast yellow focus treatment.</li>
             <li><strong>Native controls:</strong> checkboxes, radios, file inputs and selects keep platform affordances.</li>

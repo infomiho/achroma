@@ -16,7 +16,7 @@ function StartPage() {
           <StartArrow />
         </a>
         <h2 className="heading-m pt-4">Before you start</h2>
-        <p className="text-lg leading-7">You cannot save your progress. If you stop, you will need to start again.</p>
+        <p className="text-lg">You cannot save your progress. If you stop, you will need to start again.</p>
       </div>
     </ExampleShell>
   )

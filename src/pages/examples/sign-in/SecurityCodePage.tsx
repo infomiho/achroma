@@ -30,7 +30,7 @@ function SecurityCodePage() {
         <form className="space-y-7" onSubmit={handleSubmit} noValidate>
           <div className="space-y-3">
             <h1 className="heading-xl">Check your phone</h1>
-            <p className="text-lg leading-7">We sent a 6-digit security code to <strong>07700 900457</strong>. It expires in 15 minutes.</p>
+            <p className="text-lg">We sent a 6-digit security code to <strong>07700 900457</strong>. It expires in 15 minutes.</p>
           </div>
           <div className={error ? 'grid gap-2 border-l-4 border-danger pl-4' : 'grid gap-2'}>
             <label className="form-label" htmlFor="security-code">Security code</label>
