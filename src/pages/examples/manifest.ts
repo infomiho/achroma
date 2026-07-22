@@ -10,7 +10,7 @@ export const exampleApps: readonly ExampleMeta[] = [
     path: '#/examples/dashboard',
     title: 'Dashboard',
     description: 'A signed-in overview with key stats, latest bookings and recent activity.',
-    showcases: 'Stat panels, table, tags, activity feed, service navigation',
+    showcases: 'Stat panels, table, tags, activity feed, service navigation, account menu',
   },
   {
     path: '#/examples/bookings',

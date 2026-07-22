@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent, type MouseEvent } from 'react'
 import { ChoiceList, NotificationBanner } from '../../../ui'
 import { ExampleShell } from '../ExampleShell'
+import { MeadowAccountMenu } from '../MeadowAccountMenu'
 import { meadowNav } from '../meadow'
 
 const sections = [
@@ -33,7 +34,7 @@ function SettingsPage() {
   }
 
   return (
-    <ExampleShell exampleTitle="Settings" serviceName="Meadow" serviceHref="#/examples/dashboard" nav={meadowNav}>
+    <ExampleShell exampleTitle="Settings" serviceName="Meadow" serviceHref="#/examples/dashboard" nav={meadowNav} account={<MeadowAccountMenu />}>
       <div className="space-y-8">
         {savedMessage && (
           <NotificationBanner variant="success" ref={bannerRef}>{savedMessage}</NotificationBanner>

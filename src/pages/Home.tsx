@@ -1,6 +1,6 @@
 import { useRef, useState, type ReactNode } from 'react'
 import { summaryRows } from '../data'
-import { ChoiceList, ConfirmationPanel, DateInput, Details, ErrorSummary, NotificationBanner, PasswordInput, SiteFooter, SiteHeader, SkipLink, SummaryList } from '../ui'
+import { AccountMenu, ChoiceList, ConfirmationPanel, DateInput, Details, ErrorSummary, NotificationBanner, PasswordInput, SiteFooter, SiteHeader, SkipLink, SummaryList } from '../ui'
 import { exampleApps } from './examples/manifest'
 
 const nav = [
@@ -178,6 +178,15 @@ function Home() {
                     Contact support and include the email address you signed up with.
                   </Details>
                 ))}
+              </div>
+            </ComponentPanel>
+
+            <ComponentPanel title="Account menu">
+              <div className="relative flex justify-end bg-ink px-4 py-3 text-paper">
+                <AccountMenu name="Amina Patel">
+                  <a className="menu-item" href="#components">Account</a>
+                  <a className="menu-item" href="#components">Sign out</a>
+                </AccountMenu>
               </div>
             </ComponentPanel>
 

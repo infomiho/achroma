@@ -1,5 +1,6 @@
 import { NotificationBanner } from '../../../ui'
 import { ExampleShell } from '../ExampleShell'
+import { MeadowAccountMenu } from '../MeadowAccountMenu'
 import { meadowNav } from '../meadow'
 
 const stats = [
@@ -34,7 +35,7 @@ const statusTagClass: Record<BookingStatus, string> = {
 
 function DashboardPage() {
   return (
-    <ExampleShell exampleTitle="Dashboard" serviceName="Meadow" serviceHref="#/examples/dashboard" nav={meadowNav}>
+    <ExampleShell exampleTitle="Dashboard" serviceName="Meadow" serviceHref="#/examples/dashboard" nav={meadowNav} account={<MeadowAccountMenu />}>
       <div className="space-y-8">
         <NotificationBanner>The Riverside studio closes at 15:00 on Friday 24 July for maintenance.</NotificationBanner>
 

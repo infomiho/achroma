@@ -6,11 +6,12 @@ type ExampleShellProps = {
   serviceName?: string
   serviceHref?: string
   nav?: NavLinks
+  account?: ReactNode
   phaseBanner?: boolean
   children: ReactNode
 }
 
-export function ExampleShell({ exampleTitle, serviceName = 'Example', serviceHref = '#/examples', nav, phaseBanner = true, children }: ExampleShellProps) {
+export function ExampleShell({ exampleTitle, serviceName = 'Example', serviceHref = '#/examples', nav, account, phaseBanner = true, children }: ExampleShellProps) {
   return (
     <div className="flex min-h-dvh flex-col">
       <SkipLink />
@@ -25,11 +26,12 @@ export function ExampleShell({ exampleTitle, serviceName = 'Example', serviceHre
         </div>
       </div>
 
-      <header className="bg-ink text-paper">
-        <div className="mx-auto flex w-full max-w-5xl flex-wrap items-baseline gap-x-6 gap-y-1 px-4 py-4 sm:px-6">
+      <header className="relative bg-ink text-paper">
+        <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-4 py-4 sm:px-6">
           <a className="text-2xl font-bold tracking-tight underline-offset-4 hover:underline focus-visible:focus-ring-inverted" href={serviceHref}>
             {serviceName}
           </a>
+          {account}
         </div>
       </header>
 
