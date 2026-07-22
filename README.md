@@ -20,7 +20,8 @@ Five apps built with the system, indexed at `#/examples`: dashboard, bookings da
 
 ```sh
 npm install
-npm run dev      # start dev server
-npm run build    # type-check and build to dist/
-npm run lint     # oxlint
+npm run dev        # start dev server
+npm run build      # type-check and build to dist/
+npm run lint       # oxlint
+npm run storybook  # component workshop on :6006
 ```
